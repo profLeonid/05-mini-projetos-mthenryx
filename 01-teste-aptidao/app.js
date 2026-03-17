@@ -7,6 +7,10 @@ function removerClasses(){
     resultado.classList.remove("nao-apto")
 }
 
+function limparInput(){
+    document.getElementById("tempo").value = ""
+}
+
 function avaliar(){
     const tempo = document.getElementById("tempo")
     const resultado = document.getElementById("resultado")
@@ -18,5 +22,7 @@ function avaliar(){
     }else{
         resultado.textContent = "Infelizmente, você não é apto."
         resultado.classList.add("nao-apto")
-    }              
+    }        
+    
+    limparInput()
 }
