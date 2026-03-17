@@ -1,3 +1,5 @@
+"use strict"
+
 function removerClasses(){
     const resultado = document.getElementById("resultado")
 
@@ -36,3 +38,4 @@ function exibirResultado(economizou, descont, diferenca){
         exibir.classList.add("desconto-alto")
     }
 }
+
